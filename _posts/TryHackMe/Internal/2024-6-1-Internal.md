@@ -178,14 +178,14 @@ with these credentials you can login to the wordpress admin panel
 
 **From the posts page, i found a private post** 
 
-![](/assets/img/internal/0.png)
+![](/assets/img/thm/internal/0.png)
 
 <br /><br />
 
 **There was a to-do message with credentials.** 
 **Note:** these are not useful credentials
 
-![](/assets/img/internal/1.png)
+![](/assets/img/thm/internal/1.png)
 
 <br /><br />
 
@@ -197,13 +197,13 @@ Go to Appearance → Theme Editor → **404.php**
 
 I used pentester monkey's reverse shell and started a netcat listener
 
-![](/assets/img/internal/2.png)
+![](/assets/img/thm/internal/2.png)
 
 <br /><br />
 
 Go to any page that does not found to execute the reverse shell (or go to /wp-content/themes/twentyseventeen/404.php)
 
-![](/assets/img/internal/3.png)
+![](/assets/img/thm/internal/3.png)
 
 
 
@@ -211,19 +211,19 @@ Go to any page that does not found to execute the reverse shell (or go to /wp-co
 
 
 
-![](/assets/img/internal/4.png)
+![](/assets/img/thm/internal/4.png)
 
 <br /><br />
 
 **From manual enumeration i found  Database credentials in `wp-config.php`**
 
-![](/assets/img/internal/5.png)
+![](/assets/img/thm/internal/5.png)
 
 <br /><br />
 
 **I logged into the phpMyAdmin with these credentials `wordpress:wordpress123` but i did not find anything useful**
 
-![](/assets/img/internal/6.png)
+![](/assets/img/thm/internal/6.png)
 
 <br /><br />
 
@@ -257,13 +257,13 @@ udp        0      0 10.10.192.152:68        0.0.0.0:*
 
 **When enumerating common files and directories, the `/opt` directory seemed to contain some credentials for the “aubreanna” user**
 
-![](/assets/img/internal/7.png)
+![](/assets/img/thm/internal/7.png)
 
 <br />
 
 **Now we have the SSH credentials** 
 
-![](/assets/img/internal/8.png)
+![](/assets/img/thm/internal/8.png)
 
 <br />
 
@@ -271,19 +271,19 @@ udp        0      0 10.10.192.152:68        0.0.0.0:*
 
 **From `jenkins.txt` in the home directory**
 
-![](/assets/img/internal/9.png)
+![](/assets/img/thm/internal/9.png)
 
 <br />
 
 **The machine has docker running on it with ip `172.17.0.1`**
 
-![](/assets/img/internal/11.png)
+![](/assets/img/thm/internal/11.png)
 
 <br />
 
 **SSH local port forwarding**
 
-![](/assets/img/internal/12.2.png)
+![](/assets/img/thm/internal/12.2.png)
 
 <small>image source:   <i>https://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot</i>i></small>
 
@@ -295,7 +295,7 @@ udp        0      0 10.10.192.152:68        0.0.0.0:*
 
 
 
-![](/assets/img/internal/12.png)
+![](/assets/img/thm/internal/12.png)
 
 
 
@@ -307,7 +307,7 @@ There was jenkins running. Now we need jenkins credentials.
 
 I tried some default credentials, but with no luck. So I tried bruteforce with `admin` user
 
-![](/assets/img/internal/13.png)
+![](/assets/img/thm/internal/13.png)
 
 <br /><br />
 
@@ -315,7 +315,7 @@ I tried some default credentials, but with no luck. So I tried bruteforce with `
 
 
 
-![](/assets/img/internal/14.png)
+![](/assets/img/thm/internal/14.png)
 
 <br /><br />
 
@@ -323,7 +323,7 @@ I tried some default credentials, but with no luck. So I tried bruteforce with `
 
 **Replace the password with `FUZZ`**
 
-![](/assets/img/internal/15.png)
+![](/assets/img/thm/internal/15.png)
 
 <br /><br />
 
@@ -337,7 +337,7 @@ root@ip-10-10-228-42:~/Desktop# ffuf -request jenkins_req -request-proto http -w
 
 -fs to filter HTTP response size.
 
-![](/assets/img/internal/15.2.png)
+![](/assets/img/thm/internal/15.2.png)
 
 <br /><br />
 
@@ -380,7 +380,7 @@ YmFzaCAtYyAnYmFzaCAtaSA+JiAvZGV2L3RjcC8xNzIuMTcuMC4xLzQzNDMgMD4mMScK
 
 <br />
 
-![](/assets/img/internal/16.png)
+![](/assets/img/thm/internal/16.png)
 
 
 
@@ -388,7 +388,7 @@ YmFzaCAtYyAnYmFzaCAtaSA+JiAvZGV2L3RjcC8xNzIuMTcuMC4xLzQzNDMgMD4mMScK
 
 **Now we have access as the jenkins user within a Docker container**
 
-![](/assets/img/internal/17.png)
+![](/assets/img/thm/internal/17.png)
 
 
 
@@ -396,7 +396,7 @@ YmFzaCAtYyAnYmFzaCAtaSA+JiAvZGV2L3RjcC8xNzIuMTcuMC4xLzQzNDMgMD4mMScK
 
 **I found the root user in the `/opt` directory** 
 
-![](/assets/img/internal/18.png)
+![](/assets/img/thm/internal/18.png)
 
 <br /><br />
 
@@ -404,4 +404,4 @@ YmFzaCAtYyAnYmFzaCAtaSA+JiAvZGV2L3RjcC8xNzIuMTcuMC4xLzQzNDMgMD4mMScK
 
 **Authenticating as root through SSH with the credentials found:**
 
-![](/assets/img/internal/19.png)
+![](/assets/img/thm/internal/19.png)
