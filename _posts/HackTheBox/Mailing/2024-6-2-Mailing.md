@@ -157,7 +157,7 @@ Host script results:
 
 <br /><br />
 
-**navigate to the website**
+**Navigate to the website**
 
 ![](/assets/img/htb/mailing/1.png)
 
@@ -165,7 +165,7 @@ Host script results:
 
 <br /><br />
 
-**from the website we found the team members**
+**From the website we found the team members**
 
 ```bash
 Ruy Alonso >> IT Team
@@ -175,13 +175,11 @@ Gregory Smith >> Founder and CEO
 
 <br /><br />
 
-![](/assets/img/htb/mailing/1.png)
 
-<br /><br />
 
 **At the end of the page there was a link to download a document called instructions.pdf**
 
-from the instructions.pdf, i found maya's mail address
+From the instructions.pdf, i found maya's mail address
 
 ![](/assets/img/htb/mailing/2.2.png)
 
@@ -205,7 +203,7 @@ There was not any validation or filtering on the `file` parameter, so i got LFI.
 
 **hMailServer**
 
-knowing that the machine was running hMailServer. I searched about its sensitive files and configuration files.
+Knowing that the machine was running hMailServer. I searched about its sensitive files and configuration files.
 
 ![](/assets/img/htb/mailing/2.png)
 
@@ -270,6 +268,7 @@ This will result in the attacker capturing the NTLMv2 hash (which contains the u
 **Exploit CVE-2024-21413**
 
 From [CVE-2024-21413](https://github.com/CMNatic/CVE-2024-21413), I changed the sender email, receiver email
+
 sender email = 'administrator@mailing.htb' 
 receiver email = 'maya@mailing.htb' 
 
@@ -339,7 +338,7 @@ finally:
 
 <br /><br />
 
-**I startd responder to capture the NTLM hash of maya.**
+**I started responder to capture the NTLM hash of maya.**
 
 ```bash
 ┌──(root㉿kali)-[/home/kali/Desktop/mailing]
