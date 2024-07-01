@@ -1,11 +1,9 @@
-```
 ---
 title: Mailing  - HackTheBox
 date: 2024-6-2 00:00:00 +/-TTTT
 categories: [HackTheBox]
 tags: [HackTheBox, writeup, penetration testing, CVE-2024-21413, CVE-2023-2255]     # TAG names should always be lowercase
 ---
-```
 
 <br />
 
