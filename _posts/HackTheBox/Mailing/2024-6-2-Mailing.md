@@ -155,13 +155,13 @@ Host script results:
 
 
 
-![](/assets/img/htb/1.2.png)
+![](/assets/img/htb/mailing/1.2.png)
 
 <br /><br />
 
 **navigate to the website**
 
-![](/assets/img/htb/1.png)
+![](/assets/img/htb/mailing/1.png)
 
 
 
@@ -177,7 +177,7 @@ Gregory Smith >> Founder and CEO
 
 <br /><br />
 
-![](/assets/img/htb/1.png)
+![](/assets/img/htb/mailing/1.png)
 
 <br /><br />
 
@@ -185,7 +185,7 @@ Gregory Smith >> Founder and CEO
 
 from the instructions.pdf, i found maya's mail address
 
-![](/assets/img/htb/2.2.png)
+![](/assets/img/htb/mailing/2.2.png)
 
 
 
@@ -197,7 +197,7 @@ from the instructions.pdf, i found maya's mail address
 
 There was not any validation or filtering on the `file` parameter, so i got LFI. 
 
-![](/assets/img/htb/4.png)
+![](/assets/img/htb/mailing/4.png)
 
 
 
@@ -209,7 +209,7 @@ There was not any validation or filtering on the `file` parameter, so i got LFI.
 
 knowing that the machine was running hMailServer. I searched about its sensitive files and configuration files.
 
-![](/assets/img/htb/2.png)
+![](/assets/img/htb/mailing/2.png)
 
 
 
@@ -221,7 +221,7 @@ I sent a request to `C:\Program Files\hMailServer\Bin\hMailServer.ini`. but the 
 
 
 
-<br />![](/assets/img/htb/3.png)
+<br />![](/assets/img/htb/mailing/3.png)
 
 
 
@@ -231,7 +231,7 @@ I sent a request to `C:\Program Files\hMailServer\Bin\hMailServer.ini`. but the 
 
 <br />
 
-![](/assets/img/htb/5.png)
+![](/assets/img/htb/mailing/5.png)
 
 
 
@@ -241,7 +241,7 @@ I sent a request to `C:\Program Files\hMailServer\Bin\hMailServer.ini`. but the 
 
 **From [crackstation](https://crackstation.net/), I cracked the hash**
 
-![](/assets/img/htb/6.png)
+![](/assets/img/htb/mailing/6.png)
 
 
 
@@ -363,7 +363,7 @@ finally:
 
 **I got the NTLMv2 hash of maya**
 
-![](/assets/img/htb/7.png)
+![](/assets/img/htb/mailing/7.png)
 
 <br />
 
@@ -386,7 +386,7 @@ SMB] NTLMv2-SSP Client   : 10.10.11.14
 
 <br />
 
-![](/assets/img/htb/8.png)
+![](/assets/img/htb/mailing/8.png)
 
 <br /><br />
 
@@ -394,7 +394,7 @@ SMB] NTLMv2-SSP Client   : 10.10.11.14
 
 <br />
 
-![](/assets/img/htb/9.png)
+![](/assets/img/htb/mailing/9.png)
 
 <br /><br /><br />
 
@@ -402,7 +402,7 @@ SMB] NTLMv2-SSP Client   : 10.10.11.14
 
 **Enumerate the machine groups**
 
-![](/assets/img/htb/12.png)
+![](/assets/img/htb/mailing/12.png)
 
 <br />
 
@@ -410,7 +410,7 @@ SMB] NTLMv2-SSP Client   : 10.10.11.14
 
 
 
-![](/assets/img/htb/10.png)
+![](/assets/img/htb/mailing/10.png)
 
 
 
@@ -427,7 +427,7 @@ From [CVE-2023-2255](https://github.com/elweth-sec/CVE-2023-2255), I configured 
 
 <br />
 
-![](/assets/img/htb/11.png)
+![](/assets/img/htb/mailing/11.png)
 
 <br /><br />
 
@@ -456,7 +456,7 @@ Mode                 LastWriteTime         Length Name
 
 **Now, maya is in the administrators group**
 
-![](/assets/img/htb/15.png)
+![](/assets/img/htb/mailing/15.png)
 
 
 
@@ -466,7 +466,7 @@ Mode                 LastWriteTime         Length Name
 
 **I used secretsdump to dump the SAM file**
 
-![](/assets/img/htb/16.png)
+![](/assets/img/htb/mailing/16.png)
 
 <br />
 
@@ -518,7 +518,7 @@ NL$KM:bb60ea5a21d6f66892c6bf06e2482968407bc70d3975d5b5e93f813545ea99f9fb4d9027ad
 
 <br />
 
-![](/assets/img/htb/17.png)
+![](/assets/img/htb/mailing/17.png)
 
 
 
@@ -535,13 +535,13 @@ If you just need to get root flag without dumping the SAM file and loggining wit
 
 <br />
 
-![](/assets/img/htb/13.png)
+![](/assets/img/htb/mailing/13.png)
 
 <br />
 
 
 
-![](/assets/img/htb/14.png)
+![](/assets/img/htb/mailing/14.png)
 
 
 
@@ -568,4 +568,4 @@ msf6 exploit(windows/smb/psexec) > run
 
 <br />
 
-![](/assets/img/htb/18.png)
+![](/assets/img/htb/mailing/18.png)
