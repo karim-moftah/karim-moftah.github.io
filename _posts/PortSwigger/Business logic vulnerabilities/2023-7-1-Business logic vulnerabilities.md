@@ -38,13 +38,13 @@ Goal : buy a "Lightweight l33t leather jacket".
 - add `Lightweight "l33t" Leather Jacket` to your cart
 - try to checkout the order and you will get `Not enough store credit for this purchase` because you only have `$100.00`
 
-<img src="/assets/img/portswigger/business-logic/1_1.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/business-logic/1_1.png" alt="business logic" style="zoom:80%;" />
 
 <br />
 
 - notice that the request has the price in the request and it didn't perform any validation in the backend , so you can change the price to any value
 
-<img src="/assets/img/portswigger/business-logic/1_2.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/business-logic/1_2.png" alt="business logic" style="zoom:80%;" />
 
 <br />
 
@@ -73,7 +73,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 
 <br />
 
-<img src="/assets/img/portswigger/business-logic/2_3.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/business-logic/2_3.png" alt="business logic" style="zoom:80%;" />
 
 <br />
 
@@ -83,13 +83,13 @@ Goal : buy a "Lightweight l33t leather jacket".
 
 <br />
 
-<img src="/assets/img/portswigger/business-logic/2_1.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/2_1.png" alt="business logic" style="zoom:60%;" />
 
 <br />
 
 - notice that when you increase the other product quantity the price increses
 
-<img src="/assets/img/portswigger/business-logic/2_2.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/2_2.png" alt="business logic" style="zoom:60%;" />
 
 <br />
 
@@ -111,7 +111,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 - add `Lightweight "l33t" Leather Jacket` to your cart
 - notice that the maximum quantity you can add in one request is 99
 
-<img src="/assets/img/portswigger/business-logic/3_1.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/business-logic/3_1.png" alt="business logic" style="zoom:80%;" />
 
 <br />
 
@@ -122,7 +122,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 - click `start attack` , keep refreshing the `cart` page and keep your eyes on the `total price` 
 - we have now added a ton of items to the cart, and cause the Total Price to return a negative value.
 
-<img src="/assets/img/portswigger/business-logic/3_2.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/3_2.png" alt="business logic" style="zoom:60%;" />
 
 
 
@@ -172,7 +172,7 @@ Results can be even more unexpected for signed integers. When you go above the m
 
 - Clear your cart , add any other product to your cart 
 
-<img src="/assets/img/portswigger/business-logic/3_3.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/3_3.png" alt="business logic" style="zoom:60%;" />
 
 - Create the same Intruder attack again, go to payloads tab , choose `Null payloads` , from `payloads options`  choose to generate exactly `323` payloads. 
 
@@ -186,7 +186,7 @@ Results can be even more unexpected for signed integers. When you go above the m
 
 - Use Burp Repeater to add a suitable quantity of another item to your cart so that the total falls between $0 and $100.
 
-<img src="/assets/img/portswigger/business-logic/3_4.png" style="zoom:100%;" />
+<img src="/assets/img/portswigger/business-logic/3_4.png" alt="business logic" style="zoom:100%;" />
 
 <br />
 
@@ -227,7 +227,7 @@ Goal :  access the admin panel and delete Carlos.
 
   
 
-  <img src="/assets/img/portswigger/business-logic/4_1.png" style="zoom:60%;" />
+  <img src="/assets/img/portswigger/business-logic/4_1.png" alt="business logic" style="zoom:60%;" />
 
 - so, you need to login with an email that ends with `@dontwannacry.com` at the position 258th and also you should append your exploit server mail to receive the confirmation mail
 
@@ -241,7 +241,7 @@ Goal :  access the admin panel and delete Carlos.
 
 <br />
 
-<img src="C:\Users\dell\Desktop\business-logic_img\4_2.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/4_2.png" alt="business logic" style="zoom:60%;" />
 
 <br />
 
@@ -340,7 +340,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 
 <br />
 
-<img src="/assets/img/portswigger/business-logic/6_1.png" style="zoom: 80%;" />
+<img src="/assets/img/portswigger/business-logic/6_1.png" alt="business logic" style="zoom: 80%;" />
 
 
 
@@ -374,7 +374,7 @@ Goal : bypass the lab's authentication, access the admin interface, and delete C
 
 - drop the next request `GET /role-selector HTTP/1.1`
 
-<img src="/assets/img/portswigger/business-logic/7_1.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/business-logic/7_1.png" alt="business logic" style="zoom:80%;" />
 
 <br />
 
@@ -382,7 +382,7 @@ Goal : bypass the lab's authentication, access the admin interface, and delete C
 
 <br />
 
-<img src="/assets/img/portswigger/business-logic/7_2.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/7_2.png" alt="business logic" style="zoom:60%;" />
 
 <br />
 
@@ -411,7 +411,7 @@ Goal: buy a "Lightweight l33t leather jacket".
 
   <br />
 
-<img src="/assets/img/portswigger/business-logic/8_1.png" style="zoom:67%;" />
+<img src="/assets/img/portswigger/business-logic/8_1.png" alt="business logic" style="zoom:67%;" />
 
 
 
@@ -433,7 +433,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 - enter any email at the form in the bottom and you will get `Use coupon SIGNUP30 at checkout!`
 - go to `/cart` and apply the coupon 
 
-<img src="/assets/img/portswigger/business-logic/9_1.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/9_1.png" alt="business logic" style="zoom:60%;" />
 
 
 
@@ -443,7 +443,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 
 - click `place order` to buy it
 
-<img src="/assets/img/portswigger/business-logic/9_2.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/9_2.png" alt="business logic" style="zoom:60%;" />
 
 
 
@@ -482,7 +482,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 
 - In the Macro Editor, click "Test macro". Look at the response to `GET /cart/order-confirmation?order-confirmation=true` and note the gift card code that was generated. Look at the `POST /gift-card` request. Make sure that the `gift-card` parameter matches and confirm that it received a `302` response. Keep clicking "OK" until you get back to the main Burp window.
 
-<img src="/assets/img/portswigger/business-logic/9_3.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/business-logic/9_3.png" alt="business logic" style="zoom:80%;" />
 
 <br />
 
@@ -491,7 +491,7 @@ Goal : buy a "Lightweight l33t leather jacket".
 - Go to the "Resource pool" tab and add the attack to a resource pool with the "Maximum concurrent requests" set to `1`. Start the attack.
 - When the attack finishes, you will have enough store credit to buy the jacket and solve the lab.
 
-<img src="/assets/img/portswigger/business-logic/9_4.png" style="zoom:60%;" />
+<img src="/assets/img/portswigger/business-logic/9_4.png" alt="business logic" style="zoom:60%;" />
 
 
 
