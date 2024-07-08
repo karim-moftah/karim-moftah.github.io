@@ -57,7 +57,7 @@ Goal : upload a basic PHP web shell and use it to exfiltrate the contents of the
 - you will get the path of the file `The file avatars/code.php has been uploaded. `
 - go to the file path and you will see the secret text
 
-![](C:\Users\dell\Desktop\file_upload_img\1_1.png)
+![](/assets/img/portswigger/file_upload/1_1.png)
 
 
 
@@ -213,7 +213,7 @@ Goal : upload a basic PHP web shell, then use it to exfiltrate the contents of t
 - you will get the path of the file `The file avatars/code.php has been uploaded. `
 - go to the file path and you will see the secret text
 
-<img src="C:\Users\dell\Desktop\file_upload_img\5_2.png" alt="file upload" style="zoom:80%;" />
+<img src="/assets/img/portswigger/file_upload/5_2.png" alt="file upload" style="zoom:80%;" />
 
 
 
