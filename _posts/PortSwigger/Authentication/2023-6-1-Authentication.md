@@ -23,7 +23,7 @@ tags: [PortSwigger, writeup, penetration testing, Authentication ]
 - [Offline password cracking](#offline-password-cracking)
 - [Password reset poisoning via middleware](#password-reset-poisoning-via-middleware)
 - [Password brute-force via password change](#password-brute-force-via-password-change)
-- [Broken brute-force protection, multiple credentials per request](#Broken-brute-force-protection-multiple-credentials-per-request)
+- [Broken brute-force protection, multiple credentials per request](#broken-brute-force-protection-multiple-credentials-per-request)
 
 <br /><br />
 
@@ -683,5 +683,4 @@ file.close()
 <img src="/assets/img/portswigger/auth/auth6_1.png" alt="auth" style="zoom:100%;" />
 
 - Right-click on the response and select `Show response in browser`. Copy the URL and load it in the browser. The page loads and you are logged in as `carlos`.
-
 
