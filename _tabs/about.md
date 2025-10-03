@@ -10,9 +10,9 @@ order: 4
 
 
 
-I am a security professional with a background in both application development and penetration testing.  Previously, I honed my technical skills as a backend developer, fostering a deep understanding of how systems are built.  This experience now allows me to approach security testing from a unique perspective, leveraging my development knowledge to identify and exploit vulnerabilities.
+I’m a **security professional** with a background in **application development** and **penetration testing**. My journey began as a backend developer, where I built a solid understanding of how systems are structured and how applications work under the hood. That foundation now gives me a unique edge in security testing—I can think like both a builder and a breaker.
 
-I actively participate in Capture-the-Flag (CTF) competitions on platforms like HackTheBox and TryHackMe, continuously sharpening my skills and staying at the forefront of evolving security threats.
+I regularly participate in **Capture-the-Flag (CTF)** challenges on platforms such as **Hack The Box**, **TryHackMe**, **PentesterLab**, **PortSwigger**, and **Mobile Hacking Lab** to keep my skills sharp and stay ahead of evolving security threats.
 
-As a penetration tester, I specialize in uncovering vulnerabilities across various attack vectors, including networks, web, and mobile applications.
+As a **penetration tester**, I focus on discovering and analyzing vulnerabilities across **web**, **mobile**, and **network** environments, helping organizations strengthen their defenses and build more secure systems.
 
