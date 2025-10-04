@@ -290,7 +290,7 @@ adb shell am start -n com.mobilehackinglab.configeditor/.MainActivity -a android
 
 <br /><br />
 
-Reference
+Resources
 
 - https://www.mscharhag.com/security/snakeyaml-vulnerability-cve-2022-1471
 - https://medium.com/@snyksec/snakeyaml-2-0-solving-the-unsafe-deserialization-vulnerability-c29a0f08f152
