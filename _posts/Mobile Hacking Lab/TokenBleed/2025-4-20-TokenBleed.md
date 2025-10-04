@@ -330,7 +330,7 @@ Getting the secret number is not essential for exploiting the lab, but it serves
 
 Get the Secret Number With frida
 
-```java
+```javascript
 Java.perform(() => {
     let TokenManager = Java.use("com.mobilehackinglab.exchange.TokenManager");
 TokenManager["getToken"].implementation = function () {
