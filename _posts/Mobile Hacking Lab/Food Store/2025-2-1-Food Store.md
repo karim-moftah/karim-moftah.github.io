@@ -1,8 +1,11 @@
 ```
+---
 title: Food Store - Mobile Hacking Lab
 date: 2025-2-1 00:00:00 +/-TTTT
 categories: [Mobile Hacking Lab]
 tags: [mobile hacking lab, writeup, mobile penetration testing, android]     # TAG names should always be lowercase
+
+---
 ```
 
 <br />
