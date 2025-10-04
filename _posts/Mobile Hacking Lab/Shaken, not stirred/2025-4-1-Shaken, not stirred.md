@@ -1,6 +1,6 @@
 ---
 title: Shaken, not stirred - Mobile Hacking Lab
-date: 2025-3-10 00:00:00 +/-TTTT
+date: 2025-4-1 00:00:00 +/-TTTT
 categories: [Mobile Hacking Lab]
 tags: [mobile hacking lab, writeup, mobile penetration testing, android]     # TAG names should always be lowercase
 ---
@@ -176,4 +176,4 @@ MHC{mobile_4n6_1s_N0T_TH4t_H4Rd_h30d8fn48nfwuhf32f892fh23urh328}
 
 <br />
 
-**Flag: ** MHC{mobile_4n6_1s_N0T_TH4t_H4Rd_h30d8fn48nfwuhf32f892fh23urh328}
+**Flag:** MHC{mobile_4n6_1s_N0T_TH4t_H4Rd_h30d8fn48nfwuhf32f892fh23urh328}
