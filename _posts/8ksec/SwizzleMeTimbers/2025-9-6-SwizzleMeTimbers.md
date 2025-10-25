@@ -132,4 +132,4 @@ Spawned `com.8ksec.SwizzleMeTimbers.W46SY5ZJ6Z`. Resuming main thread!
 
 <br />
 
-**Flag:** CTF{{Swizzle_mbers}}
+**Flag:** `CTF{{Swizzle_mbers}}`
