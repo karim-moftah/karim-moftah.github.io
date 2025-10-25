@@ -362,7 +362,7 @@ frida -U -f com.eightksec.andropseudoprotect -l hook.js
 SecurityUtils.getSecurityToken result=8ksec_S3cr3tT0k3n_D0N0tSh4r3
 ```
 
-**Token: **8ksec_S3cr3tT0k3n_D0N0tSh4r3
+**Token:** 8ksec_S3cr3tT0k3n_D0N0tSh4r3
 
 
 
@@ -500,8 +500,6 @@ public class MainActivity extends AppCompatActivity {
 <br />
 
 **Request external storage permissions for android 13+**
-
-<br />
 
 From: AndroidManifest.xml
 
