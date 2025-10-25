@@ -30,13 +30,13 @@ The flag resides in a local file within the app’s sandbox.
 
 When the app launches, it displays a screen titled **“My Profile”** with two buttons  **“Log In”** and **“My Profile”**, but neither of these buttons performs any action.
 
-![](/assets/img/8ksec/BackSync /1.jpg)
+![](/assets/img/8ksec/BackSync/1.jpg)
 
 <br />
 
 I noticed that the app periodically sends HTTP GET requests to a domain that changes each time the app is launched. The domain name always starts with three varying characters followed by **"deletedoldstagingsite.com"**.
 
-![](/assets/img/8ksec/BackSync /1.png)
+![](/assets/img/8ksec/BackSync/1.png)
 
 <br />
 
@@ -49,17 +49,17 @@ Each time I launch the app, I observed that two functions are executed:
 
 These functions run automatically on every app startup.
 
-![](/assets/img/8ksec/BackSync /4.png)
+![](/assets/img/8ksec/BackSync/4.png)
 
 <br />
 
 The `writeFlagToSandbox()` function creates a file named **flag.txt** and saves it in the app’s **Documents** directory.
 
-![](/assets/img/8ksec/BackSync /2.png)
+![](/assets/img/8ksec/BackSync/2.png)
 
 <br />
 
-![](/assets/img/8ksec/BackSync /3.png)
+![](/assets/img/8ksec/BackSync/3.png)
 
 <br />
 
@@ -106,7 +106,7 @@ FLAG{you_remotely_triggered_the_leak}
 
 The `fetchRemoteConfig` function is responsible for sending the GET request to **deletedoldstagingsite.com**.
 
-![](/assets/img/8ksec/BackSync /8.png)
+![](/assets/img/8ksec/BackSync/8.png)
 
 <br />
 
@@ -114,11 +114,11 @@ The function located at offset **0x5370** parses JSON data from the HTTP respons
 
 <br />
 
-![](/assets/img/8ksec/BackSync /9.png)
+![](/assets/img/8ksec/BackSync/9.png)
 
 <br />
 
-![](/assets/img/8ksec/BackSync /10.png)
+![](/assets/img/8ksec/BackSync/10.png)
 
 <br />
 
@@ -143,7 +143,7 @@ The label **`LAB_000057a4`** represents the **branch where the `sendFlagTo()` fu
 
 <br />
 
-![](/assets/img/8ksec/BackSync /5.png)
+![](/assets/img/8ksec/BackSync/5.png)
 
 <br />
 
@@ -210,11 +210,11 @@ Start the app with frida, identify the domain it requests (the one that looks li
 
 The app sends a request to `<XXX>deletedoldstagingsite.com`, receives the expected JSON response, and then sends a POST to the URL specified in `"target_url"`, with the flag included in the request body.
 
-![](/assets/img/8ksec/BackSync /6.png)
+![](/assets/img/8ksec/BackSync/6.png)
 
 <br />
 
-![](/assets/img/8ksec/BackSync /7.png)
+![](/assets/img/8ksec/BackSync/7.png)
 
 <br />
 
