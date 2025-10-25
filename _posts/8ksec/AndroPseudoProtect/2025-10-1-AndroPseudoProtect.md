@@ -2,7 +2,7 @@
 title: AndroPseudoProtect - 8kSec
 date: 2025-10-1 00:00:00 +/-TTTT
 categories: [8kSec]
-tags: [mobile hacking lab, writeup, mobile penetration testing, android]     # TAG names should always be lowercase
+tags: [8kSec, writeup, mobile penetration testing, android]     # TAG names should always be lowercase
 ---
 
 <br />
