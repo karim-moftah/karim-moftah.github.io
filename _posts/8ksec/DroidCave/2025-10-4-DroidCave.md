@@ -846,4 +846,4 @@ Query only the username and the password: SELECT username, password FROM passwor
 
 <br />
 
-Download the PoC exploit app from [here](https://github.com/karim-moftah/karim-moftah.github.io/raw/refs/heads/mai/assets/img/8ksec/DroidCave/img/8ksec/DroidCave/DroidCave-Exploit)
+Download the PoC exploit app from [here](https://github.com/karim-moftah/karim-moftah.github.io/blob/main/assets/img/8ksec/DroidCave/DroidCave-Exploit.apk)
