@@ -353,7 +353,7 @@ Two problems at once:
 2. **Because the Fortify wrapper is given a bogus (maximal) object size, its bounds-checking is completely bypassed.**
     Passing `0xffffffffffffffff` to the `_chk` variants effectively disables the object-size fortify check, so the runtime can’t catch an oversized copy.
 
-For further details on Fortify, see the explanation provided [here](#Bonus).
+For further details on Fortify, see the explanation provided [here](#bonus).
 
 
 
